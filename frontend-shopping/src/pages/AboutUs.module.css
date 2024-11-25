@@ -1,0 +1,124 @@
+.aboutUsContainer {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Banner styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/sakira-glasses.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Overlay for contrast */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for contrast */
+    transition: background 0.3s ease;
+}
+
+.banner:hover .overlay {
+    background: rgba(0, 0, 0, 0.4); /* Lighter overlay on hover */
+}
+
+/* Text wrapper for positioning */
+.textWrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Title styling with animation */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1.5s ease-out;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Adding shadow for better text visibility */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Content styling */
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Shop Now button styling with gradient and hover effect */
+.shopNowButton {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4081, #d81b60); /* Gradient background */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shopNowButton:hover {
+    background: linear-gradient(135deg, #d81b60, #ff4081); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Elevate shadow on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .shopNowButton {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+}

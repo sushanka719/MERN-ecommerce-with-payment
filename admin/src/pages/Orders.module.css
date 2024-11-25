@@ -1,0 +1,179 @@
+.ordersPage {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ordersPage h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ordersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.orderBox {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orderHeader {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orderHeader h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.orderHeader p {
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+.orderContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.productItem {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productDetails h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.productDetails p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.totalAmount {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.statusUpdate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statusDropdown {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.paymentStatus {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.paymentBadge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.paid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.loadingContainer {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.noOrders {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .orderFooter {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .productItem {
+    flex-direction: column;
+  }
+
+  .productImage {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.deleteButton:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}

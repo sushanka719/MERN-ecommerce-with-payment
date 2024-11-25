@@ -1,0 +1,105 @@
+/* Container for the entire signup page */
+.signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Container for the form itself */
+.signupFormContainer {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading styling */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+/* Input group for each field */
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Styling for input fields */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Input focus styling */
+.input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Styling for the sign-up button */
+.signupButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.signupButton:hover {
+    background-color: #45a049;
+}
+
+/* Styling for error messages */
+.errorMessage {
+    color: #ff3333;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Footer section for login link */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer text style */
+.footerText {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Login link styling */
+.loginLink {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}

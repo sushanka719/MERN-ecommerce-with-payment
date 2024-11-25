@@ -1,0 +1,87 @@
+/* Login.module.css */
+.loginContainer {
+    max-width: 400px;
+    margin: 100px auto;  /* Center the container with more space at the top */
+    padding: 40px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #d8e7f5, #706b6b);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #867575;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.formGroup {
+    margin-bottom: 25px;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #4caf50;  /* Focus effect with a green border */
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+.button:active {
+    background-color: #388e3c;  /* Even darker green on click */
+}
+
+.toastify-container {
+    top: 80px !important; /* Adjust toast container for better positioning */
+}
+
+@media (max-width: 500px) {
+    .loginContainer {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .input, .button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}

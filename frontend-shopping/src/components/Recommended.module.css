@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.recommendedSection {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.glassesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glassCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.glassCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glassImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.glassInfo {
+    padding: 15px;
+    text-align: center;
+}
+
+.glassName {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.glassDescription {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.glassPrice {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff6f61;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pageButton {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pageButton:hover {
+    background-color: #ff6f61;
+    color: #fff;
+    border-color: #ff6f61;
+}
+
+.activePage {
+    background-color: #ff6f61;
+    color: #fff;
+    border-color: #ff6f61;
+}

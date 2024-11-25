@@ -1,0 +1,104 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Add black-and-white filter for out-of-stock cards */
+.outOfStockCard {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.image {
+  width: 100%; /* Ensures it spans the width of the container */
+  height: 150px; /* Fixed height for consistent sizing */
+  object-fit: cover; /* Ensures the image fills the space proportionally, cropping if necessary */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+
+.title {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stock {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Low stock indicator */
+.lowStock {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Out of stock indicator */
+.outOfStock {
+  color: #d9534f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Category styling */
+.category {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.editBtn,
+.unlistBtn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.editBtn {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #4cae4c;
+}
+
+.unlistBtn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.unlistBtn:hover {
+  background-color: #c9302c;
+}
